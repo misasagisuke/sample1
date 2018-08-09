@@ -19,7 +19,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBOutlet weak var label: UILabel!
+    var count = 0
+    
+    @IBAction func countUp() {
+        self.count += 1
+        self.label.text = String(self.count)
+    }
+    
 
 }
 
