@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    var count = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.label.textAlignment = NSTextAlignment.center
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,8 +24,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var label: UILabel!
-    var count = 0
+    
     
     @IBAction func countUp() {
         self.count += 1

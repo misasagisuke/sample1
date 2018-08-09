@@ -18,23 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9k-YK-BTH">
-                                <rect key="frame" x="151" y="282" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9k-YK-BTH">
+                                <rect key="frame" x="151" y="286" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG4-Gf-HcJ">
-                                <rect key="frame" x="151" y="374" width="46" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bG4-Gf-HcJ">
+                                <rect key="frame" x="151" y="378" width="73" height="30"/>
+                                <state key="normal" title="add"/>
                                 <connections>
                                     <action selector="countUp" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCE-3Z-wqL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c9k-YK-BTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="8wM-Zn-APc"/>
+                            <constraint firstItem="bG4-Gf-HcJ" firstAttribute="top" secondItem="c9k-YK-BTH" secondAttribute="bottom" constant="71" id="MkF-8s-QAw"/>
+                            <constraint firstItem="bG4-Gf-HcJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="T7p-TP-G70"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bG4-Gf-HcJ" secondAttribute="bottom" constant="259" id="UbU-q1-Yg2"/>
+                            <constraint firstItem="c9k-YK-BTH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="266" id="Yhs-Uj-t8p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bG4-Gf-HcJ" secondAttribute="trailing" constant="151" id="ZEa-iT-21d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c9k-YK-BTH" secondAttribute="trailing" constant="151" id="frS-qT-eih"/>
+                            <constraint firstItem="bG4-Gf-HcJ" firstAttribute="top" secondItem="c9k-YK-BTH" secondAttribute="bottom" constant="71" id="nhh-Mw-sTx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
